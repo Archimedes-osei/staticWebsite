@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Lord Consulting</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'affiliate/assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="{% static 'affiliate/https://use.fontawesome.com/releases/v6.1.0/js/all.js' %}" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="{% static 'affiliate/https://fonts.googleapis.com/css?family=Montserrat:400,700' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'affiliate/https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' %}" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'affiliate/css/styles.css' %}" rel="stylesheet" />
+    </head> 
+    <body id="page-top">
+        <!-- Navigation-->
+        <!--<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> 
+            <div class="container">
+                <!-- <a href="#" class="navbar-brand">-->
+                <!-- Logo Image -->
+                <a class="navbar-brand" href="#page-top">
+                <img src="{% static 'affiliate/assets/img/companylogo.png' %}" width="60" height = "60" alt="" class="d-inline-block align-middle mr-2"></a>
+                <!--<a class="navbar-brand" href="#page-top"><img src="{% static 'affiliate/assets/img/navbar-logo.svg' %}" alt="return" /></a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="home.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Mastheadhttp://www.localhost:8000/services/ -->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our World of Design!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+            </div>
+        </header>
+
+            <div class="container px-5 my-5">
+                <form id="contactForm" data-sb-form-api-token="1f14466f-b29a-4fca-90cf-74b37904e607">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phoneNumber" type="text" placeholder="Phone Number" data-sb-validations="required" />
+                        <label for="phoneNumber">Phone Number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phoneNumber:required">Phone Number is required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <!-- <p>To activate this form, sign up at</p>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+    </body>
+</html>

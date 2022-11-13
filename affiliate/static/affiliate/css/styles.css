@@ -377,7 +377,8 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  /* webkit-appearance: button; */
+  -webkit-animation: alternate;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -7772,7 +7773,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: black; !important;
 }
 
 .text-black-50 {
@@ -11410,7 +11411,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/7.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11701,6 +11702,10 @@ header.masthead .masthead-heading {
   }
 }
 .team-member {
+  background-color: #solid black;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -11718,7 +11723,7 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
+section#contactForm {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
