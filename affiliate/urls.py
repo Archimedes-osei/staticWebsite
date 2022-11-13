@@ -13,8 +13,8 @@ from . import views
 urlpatterns = [
 	# url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
 	# url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
-	path('', views.home, name="home"),
-	path('home.html', views.home, name="home"),
+	path('', views.index, name="index"),
+	path('index.html', views.index, name="index"),
     # path('', include(router.urls)),
     # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('contact.html', views.contact, name="contact"),

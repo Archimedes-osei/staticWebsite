@@ -8,11 +8,11 @@ from django.core.mail import send_mail
 # 	queryset = Service.objects.all().order_by('name')
 # 	serializer_class = ServiceSerializer
 
-def home(request):
-	return render(request, 'home.html', {})
-	
-def home(request):
-	return render(request, 'home.html', {})
+def index(request):
+	return render(request, 'index.html', {})
+
+def index(request):
+	return render(request, 'index.html', {})
 
 def contact(request):
 	return render(request, 'contact.html', {})
